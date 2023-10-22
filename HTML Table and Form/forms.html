@@ -9,12 +9,72 @@
 
 <body>
   <h1>Forms</h1>
-  <form action="../HTML Beginner/goat.html">
-    <input type="text" placeholder="goat name">
-    <input type="password" placeholder="password">
-    <input type="date">
-    <input type="submit">
+  <h2>Common Forms</h2>
+  <form action="/fg">
+    <div>
+      <label for="goatname">Goat name:</label>
+      <input id="goatname" type="text" placeholder="goat name" name="username">
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input id="password" type="password" placeholder="password" name="password">
+    </div>
+    <div>
+      <label for="date">Date:</label>
+      <input id="date" type="date" name="date">
+    </div>
+    <button>Submit</button>
   </form>
+  <hr>
+  <h2>Search From Websites</h2>
+  <h3>Google</h3>
+  <form action="https://www.google.com/search">
+    <input type="text" name="q" id="">
+    <button>Search Google</button>
+  </form>
+  <h3>Youtube</h3>
+  <form action="https://www.youtube.com/results">
+    <input type="text" name="search_query" id="">
+    <button>Search Youtube Videos</button>
+  </form>
+  <hr>
+  <h2>Choices</h2>
+  <form action="/goats">
+    Do you like goat?
+    <p>
+      <input type="checkbox" name="goat_like" id="goat_like">
+      <label for="goat_like">I agree?</label>
+    </p>
+    What color do you like?
+    <p>
+      <input type="radio" name="goat_color" id="brown" value="brown">
+      <label for="brown">Brown</label>
+      <input type="radio" name="goat_color" id="white" value="white">
+      <label for="white">White</label>
+      <input type="radio" name="goat_color" id="black" value="black">
+      <label for="black">Black</label>
+    </p>
+    <p>
+      <label for="goat_type">Select goat type</label>
+      <select name="goat_type" id="type">
+        <option value="Boer">Boer Goat</option>
+        <option value="Saanen">Saanen Goat</option>
+        <option value="Angora">Angora Goat</option>
+        <option value="Alpine">Alpine Goat</option>
+      </select>
+    </p>
+    <p>
+      <input type="range" name="goat_count" id="count" min="1" max="10" value="5">
+      <label for="count">Goat count</label>
+    </p>
+    <p>
+      <label for="text">How is your goat?</label>
+      <br>
+      <textarea name="goat_text" id="text" rows="5" cols="40" placeholder="Tell us your goat(s) story"></textarea>
+    </p>
+    <button>Submit</button>
+  </form>
+  <hr>
   <a href="../HTML Beginner/goat.html">Go Home</a>
 </body>
 
