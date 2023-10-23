@@ -12,23 +12,23 @@
   <form action="/registration">
     <p>
       <label for="name">Goat Name</label>
-      <input type="text" name="goat_name" id="name" required>
-      <label for="breeds">Goat Breeds</label>
-      <input type="text" name="goat_breeds" id="breeds" required>
+      <input type="text" name="goat_name" id="name" placeholder="goat name" required>
+      <label for="breed">Goat Breed</label>
+      <input type="text" name="goat_breed" id="breed" placeholder="goat breed" required>
     </p>
     Select a race:
     <p>
     <div>
-      <input type="radio" name="race_lenght" id="100m">
-      <label for="100m">100 meters</label>
+      <input type="radio" name="race_lenght" id="r100m" value="100" required>
+      <label for="r100m">100 meters</label>
     </div>
     <div>
-      <input type="radio" name="race_lenght" id="200m">
-      <label for="200m">200 meters</label>
+      <input type="radio" name="race_lenght" id="r200m" value="200" required>
+      <label for="r200m">200 meters</label>
     </div>
     <div>
-      <input type="radio" name="race_lenght" id="500m">
-      <label for="500m">500 meters</label>
+      <input type="radio" name="race_lenght" id="r500m" value="500" required>
+      <label for="r500m">500 meters</label>
     </div>
     </p>
     <p>
@@ -45,10 +45,10 @@
         <option value="15">15 y.o.</option>
       </select>
     </p>
-    <button>Submit</button>
+    <button>Register</button>
   </form>
   <hr>
-  <a href="../HTML Beginner/goat.html">Go Home</a>
+  <a href="goat.html">Go Home</a>
 </body>
 
 </html>
