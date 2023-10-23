@@ -41,12 +41,12 @@
   <h2>Choices</h2>
   <form action="/goats">
     Do you like goat?
-    <p>
+    <p> <!-- checkbox -->
       <input type="checkbox" name="goat_like" id="goat_like">
       <label for="goat_like">I agree?</label>
     </p>
     What color do you like?
-    <p>
+    <p> <!-- radio choices -->
       <input type="radio" name="goat_color" id="brown" value="brown">
       <label for="brown">Brown</label>
       <input type="radio" name="goat_color" id="white" value="white">
@@ -54,7 +54,7 @@
       <input type="radio" name="goat_color" id="black" value="black">
       <label for="black">Black</label>
     </p>
-    <p>
+    <p> <!-- drop menu -->
       <label for="goat_type">Select goat type</label>
       <select name="goat_type" id="type">
         <option value="Boer">Boer Goat</option>
@@ -63,14 +63,29 @@
         <option value="Alpine">Alpine Goat</option>
       </select>
     </p>
-    <p>
+    <p> <!-- sliders -->
       <input type="range" name="goat_count" id="count" min="1" max="10" value="5">
       <label for="count">Goat count</label>
     </p>
-    <p>
+    <p> <!-- paragraph input -->
       <label for="text">How is your goat?</label>
       <br>
       <textarea name="goat_text" id="text" rows="5" cols="40" placeholder="Tell us your goat(s) story"></textarea>
+    </p>
+    <button>Submit</button>
+  </form>
+  <hr>
+  <h2>Validations Demo</h2>
+  <form action="/test">
+    <label for="first">Enter first name</label>
+    <input type="text" name="test" id="first" required>
+    <p>
+      <label for="username">Username</label>
+      <input type="text" name="username" id="username" minlength="5" maxlength="20" required>
+    </p>
+    <p>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required>
     </p>
     <button>Submit</button>
   </form>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goat Racing</title>
+</head>
+
+<body>
+  <h1>Goat Race Registration</h1>
+  <form action="/registration">
+    <p>
+      <label for="name">Goat Name</label>
+      <input type="text" name="goat_name" id="name" required>
+      <label for="breeds">Goat Breeds</label>
+      <input type="text" name="goat_breeds" id="breeds" required>
+    </p>
+    Select a race:
+    <p>
+    <div>
+      <input type="radio" name="race_lenght" id="100m">
+      <label for="100m">100 meters</label>
+    </div>
+    <div>
+      <input type="radio" name="race_lenght" id="200m">
+      <label for="200m">200 meters</label>
+    </div>
+    <div>
+      <input type="radio" name="race_lenght" id="500m">
+      <label for="500m">500 meters</label>
+    </div>
+    </p>
+    <p>
+      <label for="email">Email</label>
+      <input type="email" name="owner_email" id="email" required>
+      <label for="password">Password</label>
+      <input type="password" name="owner_password" id="password" minlength="5" maxlength="20" required>
+    </p>
+    <p>
+      <label for="age">Select age group</label>
+      <select name="goat_age" id="age">
+        <option value="10">10 y.o.</option>
+        <option value="12">12 y.o.</option>
+        <option value="15">15 y.o.</option>
+      </select>
+    </p>
+    <button>Submit</button>
+  </form>
+  <hr>
+  <a href="../HTML Beginner/goat.html">Go Home</a>
+</body>
+
+</html>
