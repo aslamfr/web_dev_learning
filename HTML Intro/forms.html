@@ -70,7 +70,7 @@
     <p> <!-- paragraph input -->
       <label for="text">How is your goat?</label>
       <br>
-      <textarea name="goat_text" id="text" rows="5" cols="40" placeholder="Tell us your goat(s) story"></textarea>
+      <textarea name="goat_text" id="text" rows="5" cols="40" placeholder="Tell us your goat(s) story"></textarea> <!-- text area: for long text input -->
     </p>
     <button>Submit</button>
   </form>
@@ -78,10 +78,10 @@
   <h2>Validations Demo</h2>
   <form action="/test">
     <label for="first">Enter first name</label>
-    <input type="text" name="test" id="first" required>
+    <input type="text" name="test" id="first" required> <!-- required: the input must be filled -->
     <p>
       <label for="username">Username</label>
-      <input type="text" name="username" id="username" minlength="5" maxlength="20" required>
+      <input type="text" name="username" id="username" minlength="5" maxlength="20" required> <!-- min/max lenght: determine the min/max letter -->
     </p>
     <p>
       <label for="email">Email</label>
