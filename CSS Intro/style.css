@@ -1,13 +1,14 @@
 h1 {
-  color: teal;
-  background-color: orangered;
-}
-
-button {
-  color: magenta;
-  background-color: cyan;
+  text-align: center;
+  font-weight: 400;
+  /* text-decoration: wavy blue underline; */
+  letter-spacing: 10px;
+  font-size: 3em;
 }
 
 p {
-  color: green;
+  text-align: left;
+  font-weight: bold;
+  line-height: 1.2;
+  font-family: Arial, Helvetica, sans-serif;
 }
