@@ -1,0 +1,24 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+main {
+  width: 60%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+h2,h3 {
+  font-family: 'Playpen Sans', cursive;
+  font-weight: 400;
+}
+
+p {
+  font-family: 'Playpen Sans', cursive;
+  font-weight: 100;
+}
+
