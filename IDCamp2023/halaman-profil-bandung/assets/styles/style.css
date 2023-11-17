@@ -52,6 +52,13 @@ nav a:hover {
   font-weight: 700;
 }
 
+/* @media screen and (max-width: 500px) {
+  nav li {
+    display: block;
+    margin-top: 5px;
+  }
+} */
+
 main {
   padding: 20px;
   overflow: auto;
@@ -94,7 +101,7 @@ aside {
 }
 
 .profile img {
-  width: 200px;
+  width: 100%;
 }
 
 footer {
