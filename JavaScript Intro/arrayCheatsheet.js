@@ -5,7 +5,7 @@ const colors = ["red", "orange", "yellow"];
 console.log(colors[0]); // "red"
 
 // They have a length:
-colors.length; //3
+console.log(colors.length); //3
 
 // Important array methods:
 //push(value) - adds value to the END of an array
