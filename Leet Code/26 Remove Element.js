@@ -7,9 +7,14 @@ function removeDuplicate(nums, val) {
     }
   }
   n = n.filter((element) => element !== null)
-  return n;
+  // return n;
+
+  for (let i=0; i<n.length; i++) {
+    k = n[i]
+    return k;
+  }
 }
 
-let nums = [0,0,1,1,1,1,2,2,3,3,4];
-let val = 2;
+let nums = [3,2,2,3];
+let val = 3;
 console.log(removeDuplicate(nums, val));
