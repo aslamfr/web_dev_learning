@@ -1,7 +1,7 @@
 function isValid(s) {
   let stack = [];
   for (let c of s) {
-    // console.log(stack);
+    console.log(stack);
     if (c === "(" || c === "[" || c === "{") {
       stack.push(c);
     } else {
