@@ -16,9 +16,9 @@
 // OUR FIRST FOR LOOP
 // ======================================
 
-for (let num = 1; num <= 10; num += 1) {
-    console.log(num);
-}
+// for (let num = 1; num <= 10; num += 1) {
+//     console.log(num);
+// }
 
 // ======================================
 // MORE EXAMPLES OF FOR LOOPS!
