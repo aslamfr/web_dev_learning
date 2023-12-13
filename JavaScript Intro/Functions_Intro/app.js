@@ -23,7 +23,17 @@ function add(x, y) {
     return x + y;
 }
 
+function capitalize(s) {
+    let first = s[0];
+    console.log(s.length);
+    s = s.slice(1,s.length);
+    first = first.toUpperCase();
+    console.log(first + s);
+    return first + s;
+}
 
+let s = "computer";
+capitalize(s);
 
 
 
