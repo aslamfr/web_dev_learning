@@ -1,31 +1,32 @@
 document.querySelector('button').addEventListener('click', function (evt) {
-    console.log(evt)
-})
+    console.log(evt);
+});
 
 // const input = document.querySelector('input');
-// input.addEventListener('keydown', function (e) {
-//     console.log(e.key)
-//     console.log(e.code)
-// })
+// input.addEventListener('keydown', function (evt) {
+//     console.log(evt.key);
+//     console.log(evt.code);
+// });
 // input.addEventListener('keyup', function () {
-//     console.log("KEYUP")
-// })
+//     console.log('key up');
+// });
 
 window.addEventListener('keydown', function (e) {
-    switch (e.code) {
+    // console.log(e.code);
+    switch(e.code) {
         case 'ArrowUp':
-            console.log("UP!");
+            console.log("up");
             break;
         case 'ArrowDown':
-            console.log("DOWN!");
+            console.log("down");
             break;
         case 'ArrowLeft':
-            console.log("LEFT!");
+            console.log("left");
             break;
         case 'ArrowRight':
-            console.log("RIGHT!");
-            break
+            console.log("right");
+            break;
         default:
-            console.log("IGNORED!")
+            console.log("other");
     }
-})
+});
