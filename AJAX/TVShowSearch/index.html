@@ -2,21 +2,30 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TV Show Search</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV Show Search</title>
 
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!-- temporary css style -->
+  <style>
+    div.movieResult {
+      display: inline-block;
+      text-align: center;
+      padding: 0 5px;
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 </head>
 
 <body>
-    <h1>TV Show Search</h1>
-    <form id="searchForm">
-        <input type="text" placeholder="TV Show Title" name="query">
-        <button>Search</button>
-    </form>
-    <script src="app.js"></script>
+  <h1>TV Show Search</h1>
+  <form id="searchForm">
+    <input type="text" placeholder="Search Title" name="query">
+    <button>Search</button>
+  </form>
+  <script src="app.js"></script>
 </body>
 
 </html>

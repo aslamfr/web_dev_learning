@@ -4,4 +4,6 @@ const data = `{"ticker":{"base":"BTC","target":"USD","price":"11288.49813464","v
 // THIS IS A JS OBJECT
 const parsedData = JSON.parse(data);
 
-
+// Other data
+const dog ={breed: 'lab', color: 'black', isAlive: true, owner: undefined};
+const strigifyDog = JSON.stringify(dog);

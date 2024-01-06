@@ -1,21 +1,24 @@
 const jokes = document.querySelector("#jokes");
 const button = document.querySelector("button");
 
-const addNewJoke = async () => {
-  const jokeText = await getDadJoke();
-  const newLI = document.createElement("LI");
-  newLI.append(jokeText);
+const addJoke = async () => {
+  const jokeData = await getDadJoke();
+  const newLI = document.createElement('li');
+  newLI.append(jokeData);
   jokes.append(newLI);
-};
+  console.log( jokeData)
+}
 
 const getDadJoke = async () => {
   try {
-    const config = { headers: { Accept: "application/json" } };
+    const config = {headers: {Accept: "application/json"}};
     const res = await axios.get("https://icanhazdadjoke.com/", config);
+    // console.log(res.data.joke)
     return res.data.joke;
   } catch (e) {
-    return "NO JOKES AVAILABLE! SORRY :(";
+    console.log("Error", e);
+    return e
   }
-};
+}
 
-button.addEventListener("click", addNewJoke);
+button.addEventListener("click", addJoke);
