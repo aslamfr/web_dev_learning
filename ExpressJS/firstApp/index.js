@@ -10,13 +10,11 @@ const port = 8080;
 
 app.get('/', (req, res) => {
   console.log('Home requested');
-  res.send("Home page");
+  res.send("<h1> Welcome to the home page</h1>");
 });
 
 // pattern
 app.get('/r/:subreddit', (req, res) => {
-  // console.log("Subereddit requested");
-  // console.log(req.params);
   const {subreddit} = req.params;
   res.send(`this is ${subreddit}`);
 });
@@ -37,10 +35,16 @@ app.get('/dogs', (req, res) => {
   console.log('Dogs requested');
   res.send("woof");
 });
+app.get('/search', (req, res) => {
+  console.log(req.query);
+  const {q} = req.query;
+  if (!q) {
+    res.send("Nothing Searched");
+  }
+  res.send(`<h1>Result for ${q}<\h1>`);
+});
 
-
-
-
+// catch all
 app.get(('*'), (req,res) => {
   console.log("Unknown request");
   res.send("Unknown Path");
